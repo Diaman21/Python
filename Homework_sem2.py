@@ -77,7 +77,8 @@ def money_dealer(ppl,mon, count):
         if i < count:
             mon[i] += 1
         else: mon[i] += 2
-    print('Игроки получили монеты.')    
+    print('Игроки получили монеты.') 
+    
     return mon
 def anounce(ppl,mon):
     print(f'Игроки с номерами: {ppl} \nДеньги на руках:   {mon}')
@@ -91,6 +92,7 @@ def man_count(ppl):
         except:
             print('Это не число')
     return ppl_counter
+
 people_list = []
 money_list = []
 for i in range(0, (int(input('Игроков в игре: ')))):
